@@ -6,3 +6,5 @@
 /har_model.pkl
 /__pycache__
 /tests/__pycache__
+*.sqlite
+*.vsidx
