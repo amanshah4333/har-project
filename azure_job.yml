@@ -1,0 +1,7 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+code: .
+command: python model.py
+environment: azureml:AzureML-Scikit-learn0.24-Cuda11-OpenMpi4.1.0-py36:1
+compute: /subscriptions/af84df25-e337-4089-8507-35ec76936789/resourceGroups/ml/providers/Microsoft.MachineLearningServices/workspaces/har/computes/har
+experiment_name: har
+description: Train the HAR model on Azure
