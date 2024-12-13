@@ -35,6 +35,17 @@ jobs:
         with:
           python-version: 3.11
 
+
+      - name: Install Azure CLI
+        uses: azure/setup-cli@v3
+        with:
+          extensions: ml  # Specify the ML extension
+
+      - name: Verify Azure CLI and ML Extension
+        run: |
+          az --version
+          az extension list
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
