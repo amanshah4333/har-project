@@ -60,8 +60,8 @@ jobs:
 
       - name: Train Model and Submit Job
         run: |
-          az ml job create --file azure_job.yml
+          az ml job create --file azure_job.yml --resource-group ml --workspace-name har --web --debug
 
       - name: Deploy Model
         run: |
-          az ml model deploy -n har-endpoint --model har_model.pkl --overwrite
+          az ml model deploy -n har-endpoint --model har_model.pkl --overwrite --debug
