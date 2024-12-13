@@ -1,4 +1,9 @@
-from ..model import download_and_preprocess_dataset
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.abspath(os.path.join(__file__, os.pardir))))
+from model import download_and_preprocess_dataset
+
 import joblib
 
 def test_dataset_preprocessing():
