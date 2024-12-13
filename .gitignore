@@ -4,3 +4,5 @@
 
 /UCI_HAR_Dataset
 /har_model.pkl
+/__pycache__
+/tests/__pycache__

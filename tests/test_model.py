@@ -1,4 +1,4 @@
-from dataset_preprocess import download_and_preprocess_dataset
+from model import download_and_preprocess_dataset
 import joblib
 
 def test_dataset_preprocessing():
